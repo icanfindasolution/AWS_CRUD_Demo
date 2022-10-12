@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "ad0ca411-97a8-4175-84ca-fd835ea1397b",
+		"name": "AWS Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23745019"
+	},
+	"item": [
+		{
+			"name": "Put Items",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\": \"123\", \"price\": 15, \"name\": \"myitem\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ebnffdmspl.execute-api.us-east-1.amazonaws.com/dev/items",
+					"protocol": "https",
+					"host": [
+						"ebnffdmspl",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ebnffdmspl.execute-api.us-east-1.amazonaws.com/dev/items",
+					"protocol": "https",
+					"host": [
+						"ebnffdmspl",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Items By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ebnffdmspl.execute-api.us-east-1.amazonaws.com/dev/items/1234",
+					"protocol": "https",
+					"host": [
+						"ebnffdmspl",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"items",
+						"1234"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Items By ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://ebnffdmspl.execute-api.us-east-1.amazonaws.com/dev/items/1234",
+					"protocol": "https",
+					"host": [
+						"ebnffdmspl",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"items",
+						"1234"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
